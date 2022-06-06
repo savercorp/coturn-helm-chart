@@ -1,14 +1,11 @@
 # coturn-helm-chart
 
-## Release
+## Install
 
 ```bash
-helm package . -d <PATH_TO_helm-charts>
+helm repo add saver https://savercorp.github.io/helm-charts
+helm install coturn saver/coturn
 ```
+## Contributing
 
-## Test
-
-```bash
-helm install coturn .
-helm test coturn
-```
+Please read through our [contributing guidelines](/CONTRIBUTING.md).
